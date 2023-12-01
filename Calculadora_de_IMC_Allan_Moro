@@ -26,6 +26,15 @@ def start():
 
 
     else:
+        print("""Referencia de IMC para adultos
+              
+              IMC           Nivel de peso
+              ~ 18.5        Bajo de peso
+              18.5-24.9     Normal
+              25-29         Sobrepeso
+              30~           Obesidad Obscena
+              
+              """)
         print("Su Indice de masa corporal es: ", imc)
     
 
