@@ -10,10 +10,10 @@ def start():
 
     altura_m = float(input("Dame tu altura en Metros  "))
 
-    imc = peso_kg / (altura_m)**2
     
-
-    if peso_kg >300 or altura_m > 3:
+    
+          
+    if peso_kg > 300 or altura_m > 3 or altura_m == 0 or altura_m == 0:
 
         print("""Usted introdujo un valor invalido.
             Valores permitidos:
@@ -24,8 +24,8 @@ def start():
         print("Su Indice de masa corporal no puede calculado ")
 
 
-
     else:
+        imc = peso_kg / (altura_m)**2
         print("""Referencia de IMC para adultos
               
               IMC           Nivel de peso
@@ -33,7 +33,7 @@ def start():
               18.5-24.9     Normal
               25-29         Sobrepeso
               30~           Obesidad Obscena
-              
+
               """)
         print("Su Indice de masa corporal es: ", imc)
     
