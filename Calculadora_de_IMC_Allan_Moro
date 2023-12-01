@@ -1,0 +1,44 @@
+#Calculadora de IMC Allan Moro
+
+para_invalido = True
+
+def start():
+
+    print("Bienvenido a la Calculadora de IMC")
+
+    peso_kg = float(input("Dame tu peso en Kg  "))
+
+    altura_m = float(input("Dame tu altura en Metros  "))
+
+    imc = peso_kg / (altura_m)**2
+    
+
+    if peso_kg >300 or altura_m > 3:
+
+        print("""Usted introdujo un valor invalido.
+            Valores permitidos:
+            0 - 300 kg
+            0 - 3 mts
+            """)
+        para_invalido == False
+        print("Su Indice de masa corporal no puede calculado ")
+
+
+
+    else:
+        print("Su Indice de masa corporal es: ", imc)
+    
+
+while para_invalido:
+    start()
+    seleccion = int(input("""Presiona 
+          1 para calcular otra vez  
+          2 para cerrar programa  """))
+    
+    if seleccion == 1 :
+
+        start()
+
+    else:
+
+        exit()
